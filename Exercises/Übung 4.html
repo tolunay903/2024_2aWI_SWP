@@ -8,10 +8,38 @@
     <link rel="stylesheet" href="cssreset.css">
 
     <style>
-        .header{
+        .menu{
             background-color: cyan;
             height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            padding: 20px;
         }
+
+        .menu-container{
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+            margin: 30px;
+            flex-direction: row;
+            display: flex;
+        }
+
+        .menu-box{
+            background-color: black;
+            height: 30px;
+            width: 30px;
+            margin: 10px;
+        }
+
+        .content{
+            background-color: yellowgreen;
+            width: 300px;
+            height: 300px;
+        }
+
         .footer{
             background-color: violet;
             position: absolute;
@@ -26,20 +54,20 @@
 
 </head>
 <body>
-    <div class="header">
-        <div class="left-menu">
+    <div class="menu">
+        <div class="menu-container">
             <div class="menu-box"></div>
         </div>
-        <div class="center-menu">
-            <div class="mbox"></div>
-            <div class="mbox"></div>
+        <div class="menu-container">
+            <div class="menu-box"></div>
+            <div class="menu-box"></div>
         </div>
-        <div class="right-menu">
-            <div class="mbox"></div>
-            <div class="mbox"></div>
+        <div class="menu-container">
+            <div class="menu-box"></div>
+            <div class="menu-box"></div>
         </div>
     </div>
-    <div class="container"></div>
+    <div class="content"></div>
     <div class="footer"></div>
     
 </body>
