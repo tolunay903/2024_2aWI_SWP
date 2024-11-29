@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .bluebox{
+            background-color: aqua;
+            position: relative;
+            height: 400px;
+            width: 200px;
+            top: 40px;
+            left: 40px;
+            border-style: solid;
+        }
+
+        .box1{
+            background-color: greenyellow;
+            height: 40px;
+            width: 40px;
+            bottom: 0px;
+            right: 0px;
+            position: absolute;
+        }
+
+        .box2{
+            background-color: black;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            top: -10px;
+            left: -10px;
+        }
+
+        .container{
+            border-style: solid;
+            height: 40px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .boxgrün{
+            background-color: greenyellow;
+            height: 40px;
+            width: 40px;
+            border-style: solid;
+        }
+
+
+    </style>
+
+
+
+</head>
+
+
+<body>
+
+    <div class="bluebox">
+        <div class="box1"></div>
+        <div class="box2"></div>
+    </div>
+
+    <div class="container">
+        <div class="boxgrün"></div>
+        <div class="boxgrün"></div>
+        <div class="boxgrün"></div>
+    </div>
+    
+</body>
+</html>
