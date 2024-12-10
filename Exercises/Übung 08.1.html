@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .container1 {
+            margin: 50px;
+            border-style: solid;
+            background-color: grey;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
+            height: auto;
+
+        }
+
+        .box {
+            background-color: aqua;
+            height: 100px;
+            width: 100px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .container2 {
+
+            border-style: solid;
+            margin: 50px;
+            display: grid;
+            grid-template-columns: 60%calc(40% - 100px);
+            height: auto;
+            column-gap: 100px;
+
+        }
+
+        .footer {
+            background-color: rgb(116, 241, 116);
+            height: 500px;
+
+        }
+
+        @media screen and (max-width:800px) {
+            .container1 {
+                grid-template-columns: auto;
+                justify-content: left;
+                background-color: white;
+                border: none;
+            }
+
+            .container2 {
+                grid-template-columns: auto;
+                row-gap: 20px;
+                border: none;
+            }
+
+            .itemA {
+                width: 55%;
+            }
+
+            .itemB {
+                width: 45%;
+            }
+
+
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container1">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+    <div class="container2">
+        <div class="footer itemA"></div>
+        <div class="footer itemB"></div>
+    </div>
+</body>
+
+</html>
