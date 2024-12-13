@@ -1,6 +1,8 @@
 .container-top {
     height: 27px;
     background-color: rgb(91, 4, 4);
+    display: flex;
+    justify-content: space-between;
 }
 
 .container-center {
@@ -11,6 +13,7 @@
 .container-bottom {
     height: 40px;
     background-color: rgb(91, 4, 4);
+    display: flex;
 }
 
 .image-container {
@@ -21,4 +24,59 @@
 
 img {
     width: 100%;
+}
+
+.container-left ul {
+    display: flex;
+    color: white;
+    justify-content: left;
+    align-items: center;
+    height: 27px;
+
+
+}
+
+.container-left ul li {
+    padding-left: 40px;
+    padding-right: 80px;
+}
+
+.sucukbox {
+    color: white;
+    justify-content: right;
+    align-items: center;
+    height: 27px;
+    display: flex;
+    padding-right: 40px;
+}
+
+.container-left1 ul {
+    color: white;
+    align-items: center;
+    display: flex;
+    height: 40px;
+}
+
+.container-left1 ul li {
+    padding-left: 40px;
+    padding-right: 80px;
+}
+
+.content-container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container-corona {
+    color: grey;
+    padding: 10px;
+}
+
+
+.container-19 {
+    color: blue;
+}
+
+.container-laut {
+    color: red;
 }
