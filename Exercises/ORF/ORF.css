@@ -42,6 +42,8 @@
     height: 40px;
     background-color: rgb(91, 4, 4);
     display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
 }
 
 .image-container {
@@ -116,10 +118,18 @@ img {
     width: 60%;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -101px;
+    bottom: -100px;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     gap: 15px;
+}
+
+.container-right1 {
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    position: relative;
+    top: 3px;
 }
