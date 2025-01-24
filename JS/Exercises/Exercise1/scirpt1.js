@@ -40,3 +40,7 @@ b = a + 3;
 c = c - 3;
 
 // gib die neuen Werte der Variablen aus
+
+console.log("Die Variable a hat den Wert: " + a);
+console.log("Die Variable b hat den Wert: " + b);
+console.log("Die Variable c hat den Wert: " + c);
