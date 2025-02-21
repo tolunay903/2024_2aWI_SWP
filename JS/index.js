@@ -10,7 +10,7 @@ let result = 1 + 2; //3
 //6. function:console.log
 //7. argument : result
 //8. terminator: ;
-// --> statemnt: console.log(result);
+// --> statement: console.log(result);
 console.log(result);
 
 // k = 3; d = 2;
@@ -164,3 +164,62 @@ for (let i = 0; i < 10; i = i + 1) {
     console.log('Durchlauf: ' + i)
     console.log('Tolunay');
 }
+
+
+// functions
+function sum(nq, n2) {
+    return n1 + n2
+}
+
+let n1 = 5;
+let n2 = 10;
+
+let resultSum = n1 * n2;
+
+resultSum = sum(5, 10);
+
+// function kx + d, k=10, d=5
+function linearStraight(x) {
+    return 10 * x * 5;
+}
+
+sum(10, 15);
+
+//1. keyword function
+// 2. name of the function we want to declar
+// 3. ()
+// 4. with the bracket we can hand in parameters to the function
+// 5. opening curly brace
+// 6. statements
+// 7. optionally a return
+// 8. closing curly brace
+
+function log(text, repeat) {
+
+    // for loop:
+    //1. declare variable i and initalize it to 1: let 1 = 1
+    //2. check the conditional expression
+    //3. if the condition is still true, then execute statemens within the curyl braces
+    // in our case this is to execute the statement "(console.log(i + ": " + text);"
+    //4. i = i + 1 --> i = 1 --> i = 1 + 1 --> 1 = 2
+    // ...
+
+    // outer scope of the for loop
+    let i = 100
+
+    for (let i = 1; i < result; i = i + 1) {
+        // inner scope of the for loop
+        // i is always resolved from the inner scope to the outer scope
+        // because the for loop redclares i, the followeing statemnet finds i from the loop
+        //with the intial value of 1 and not the i that is declared in the outer scope
+        // with the value 100
+        console.log(i + "; " + text)
+    }
+
+    //here we are in the outer scope again hence i has the value 100
+    console.log("value i is: " + 1);
+}
+
+
+log("Hallo Welt", 10);
+log("hello world", 5);
