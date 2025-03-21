@@ -1,18 +1,22 @@
-/*/Du hast folgende Eingabe "1 2 3 4" 
+/*Du hast eine Folge von Zahlen die durch ein Leerzeichen getrennt sind. 
 
-Line 2: n space-separated integer numbers x_1 .. x_n. 
+Beispiel: 
+"1 2 3 4 5" 
 
-Output 
-sum of even numbers 
+Berechne die Summe der der geraden Zahlen aus der Eingabe und gib die Summe auf der console aus. 
 
-Constraints 
--100 <= x_i <= 100 
-
-Example 
-
-Input 
-1 2 3 4 
-
-Output 
+Beispiel mit obiger Eingabe: 
 6 
 */
+
+let T = [1, 2, 3, 4, 5];
+
+let SumOfNumbers = 0;
+
+for (let i = 0; i <= 5; i++) {
+    if (T[i] % 2 == 0) {
+        SumOfNumbers += T[i];
+    }
+}
+
+console.log(SumOfNumbers);
