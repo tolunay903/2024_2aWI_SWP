@@ -9,13 +9,13 @@ Beispiel mit obiger Eingabe:
 6 
 */
 
-let T = [1, 2, 3, 4, 5];
-
+let inputString = "1 2 3 4 5";
+let numbersArray = inputString.split(" ").map(Number);
 let SumOfNumbers = 0;
 
-for (let i = 0; i <= 5; i++) {
-    if (T[i] % 2 == 0) {
-        SumOfNumbers += T[i];
+for (let i = 0; i < numbersArray.length; i++) {
+    if (numbersArray[i] % 2 === 0) {
+        SumOfNumbers += numbersArray[i];
     }
 }
 
