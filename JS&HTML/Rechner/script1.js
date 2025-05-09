@@ -1,14 +1,27 @@
 function calculateSum() {
-    console.log("Calcutale clicked!");
+    let inputA = document.getElementById("inputA").value;
+    let inputB = document.getElementById("inputB").value;
+    let result = Number(inputA) + Number(inputB);
+    document.getElementById('result').innerHTML = result;
+}
 
+function calculateSubtract() {
+    let inputA = document.getElementById("inputA").value;
+    let inputB = document.getElementById("inputB").value;
+    let result = Number(inputA) - Number(inputB);
+    document.getElementById('result').innerHTML = result;
+}
 
-    inputA = document.getElementById("inputA").value;
-    inputB = document.getElementById("inputB").value;
+function calculatemultiply() {
+    let inputA = document.getElementById("inputA").value;
+    let inputB = document.getElementById("inputB").value;
+    let result = Number(inputA) * Number(inputB);
+    document.getElementById('result').innerHTML = result;
+}
 
-    console.log("inputA: " + inputA);
-    console.log("inputB: " + inputB);
-
-    let result = inputA + inputB;
-
-    console.log(result);
+function calculatedivide() {
+    let inputA = document.getElementById("inputA").value;
+    let inputB = document.getElementById("inputB").value;
+    let result = Number(inputA) / Number(inputB);
+    document.getElementById('result').innerHTML = result;
 }

@@ -5,22 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="index.js" defer></script>
+    <script src="script1.js" defer></script>
 </head>
 
 <body>
-    <h1 id="heading"> Super Page</h1>
+    <h1 id="heading">Super Page</h1>
     <div id="content">
-        A: <input type="number" id="inputA" value=20 />
-        B: <input type="number" id="inputB" value=30 />
-        <button id="calculate" onclick="calculateSum()">Calculate</button>
+        <input type="number" id="inputA">
+        <input type="number" id="inputB">
+        <button class="button" onclick="calculateSum()">+</button>
+        <button class="button" onclick="calculateSubtract()">-</button>
+        <button class="button" onclick="calculatemultiply()">*</button>
+        <button class="button" onclick="calculatedivide()">/</button>
     </div>
     <div>
-        Result:
-        <span id="result"> result </span>
+        Result: <span id="result"></span>
     </div>
-
-
 </body>
 
 </html>
