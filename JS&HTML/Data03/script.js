@@ -1,3 +1,4 @@
+
 let scores = [
     {
         name: "Olaf",
