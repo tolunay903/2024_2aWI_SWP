@@ -1,0 +1,11 @@
+.container {
+    border: 1px;
+    border-style: solid;
+    padding: 32px;
+}
+
+.scores {
+    border: 1px;
+    border-style: solid;
+
+}
